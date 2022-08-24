@@ -1,12 +1,21 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Pressable} from 'react-native';
 
 import styles from './style';
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.textStyle}>Home Screen</Text>
+      <Pressable
+        onPress={() => navigation.navigate('Covid-19 Detection')}
+        style={({pressed}) => [
+          {
+            backgroundColor: pressed ? 'white' : 'aliceblue',
+          },
+          styles.wrapperCustom,
+        ]}>
+        <Text style={styles.textStyle}>Covid-19 Detection</Text>
+      </Pressable>
     </View>
   );
 };

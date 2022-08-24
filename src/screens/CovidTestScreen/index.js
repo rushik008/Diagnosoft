@@ -6,7 +6,7 @@ import styles from './style';
 const CovidTestScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.textStyle}>Home Screen</Text>
+      <Text style={styles.textStyle}>Covid Test Screen</Text>
     </View>
   );
 };

@@ -1,0 +1,57 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/AveriaSerifLibre-Bold.ttf",
+      "sha1": "0aa52cb64d491af28fb686eb398d3c2f07dbc0f7"
+    },
+    {
+      "path": "assets/fonts/AveriaSerifLibre-BoldItalic.ttf",
+      "sha1": "de01abde0eeede582f8054959934d8e905734d9b"
+    },
+    {
+      "path": "assets/fonts/AveriaSerifLibre-Italic.ttf",
+      "sha1": "be4d5af39d128781612db088839e7a177b6fd73b"
+    },
+    {
+      "path": "assets/fonts/AveriaSerifLibre-Light.ttf",
+      "sha1": "be5e56c58a5daa44c5847b139a1912838d6efde7"
+    },
+    {
+      "path": "assets/fonts/AveriaSerifLibre-LightItalic.ttf",
+      "sha1": "3d57dae2bcf6d7619c8b1b6fb64a1858349bf2ab"
+    },
+    {
+      "path": "assets/fonts/AveriaSerifLibre-Regular.ttf",
+      "sha1": "715d148b2c946d3a38e2c3942077b5d3beb556bb"
+    },
+    {
+      "path": "assets/fonts/BreeSerif-Regular.ttf",
+      "sha1": "f19ca8ca7c6f79883f331cf66f4a7d4bc5651a42"
+    },
+    {
+      "path": "assets/fonts/DancingScript-Bold.ttf",
+      "sha1": "42858229a137c5188a859df102afff145200114d"
+    },
+    {
+      "path": "assets/fonts/DancingScript-Medium.ttf",
+      "sha1": "30711d9cdbed046fef8128082c6cc1a9287dbc7c"
+    },
+    {
+      "path": "assets/fonts/DancingScript-Regular.ttf",
+      "sha1": "b52e869bd47b6e98fd907ae00b1828916451b3b0"
+    },
+    {
+      "path": "assets/fonts/DancingScript-SemiBold.ttf",
+      "sha1": "b5e71ddbaca9b4d5953f0c5e45bf326fb7df35ba"
+    },
+    {
+      "path": "assets/fonts/DMSerifText-Italic.ttf",
+      "sha1": "9831d1dfa193ea2f3137ed122387efada0ba3144"
+    },
+    {
+      "path": "assets/fonts/DMSerifText-Regular.ttf",
+      "sha1": "9ea45f47df2fdae5a9a69e56801ee9d55f9cc576"
+    }
+  ]
+}

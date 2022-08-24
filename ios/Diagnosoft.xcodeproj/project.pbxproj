@@ -14,6 +14,19 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-Diagnosoft-DiagnosoftTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Diagnosoft-DiagnosoftTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		05B1B52BAB4243A3926B9490 /* AveriaSerifLibre-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAFF0B9F854441A0B6B8FBF7 /* AveriaSerifLibre-Bold.ttf */; };
+		AD70ACA713E842C7B9CEA215 /* AveriaSerifLibre-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1987E6F3AAA414BB0CD96B9 /* AveriaSerifLibre-BoldItalic.ttf */; };
+		D333572DA79A444CB42869D1 /* AveriaSerifLibre-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09E095EF40EC447F80CF26A0 /* AveriaSerifLibre-Italic.ttf */; };
+		15208A041E524EA297914A72 /* AveriaSerifLibre-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DDA5971DCC247698FC349E5 /* AveriaSerifLibre-Light.ttf */; };
+		06975297150843EDBB2D1B35 /* AveriaSerifLibre-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCF59C725321402FA3172BCC /* AveriaSerifLibre-LightItalic.ttf */; };
+		51F47D3D468A4F4D8691B576 /* AveriaSerifLibre-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A78319ABD6D4E8895CA9AF5 /* AveriaSerifLibre-Regular.ttf */; };
+		FA32E3A9B28041C288BFDF53 /* BreeSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17AD173EA02D459DBCF82757 /* BreeSerif-Regular.ttf */; };
+		94E17D42AC414FB8B46D7757 /* DancingScript-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C246FD3B4E3247E989FACAB6 /* DancingScript-Bold.ttf */; };
+		8E96E25F7AEF46F2967F58C4 /* DancingScript-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A3B2D865464404A8FD3A579 /* DancingScript-Medium.ttf */; };
+		8C78892ADDC44A27BDE67630 /* DancingScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7CA331A86854515913B3B29 /* DancingScript-Regular.ttf */; };
+		6528405A95EC4BB496C65CD8 /* DancingScript-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F919388BB4841A4B1D32E7C /* DancingScript-SemiBold.ttf */; };
+		E2A32447B6834E10940A23BF /* DMSerifText-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF7BDF8D5359445FAFA39EF3 /* DMSerifText-Italic.ttf */; };
+		0BEED71B2A294BB3964B572D /* DMSerifText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9BB517EE3564B80A86379E2 /* DMSerifText-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +57,19 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Diagnosoft/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Diagnosoft-DiagnosoftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diagnosoft-DiagnosoftTests.release.xcconfig"; path = "Target Support Files/Pods-Diagnosoft-DiagnosoftTests/Pods-Diagnosoft-DiagnosoftTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EAFF0B9F854441A0B6B8FBF7 /* AveriaSerifLibre-Bold.ttf */ = {isa = PBXFileReference; name = "AveriaSerifLibre-Bold.ttf"; path = "../assets/fonts/AveriaSerifLibre-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B1987E6F3AAA414BB0CD96B9 /* AveriaSerifLibre-BoldItalic.ttf */ = {isa = PBXFileReference; name = "AveriaSerifLibre-BoldItalic.ttf"; path = "../assets/fonts/AveriaSerifLibre-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		09E095EF40EC447F80CF26A0 /* AveriaSerifLibre-Italic.ttf */ = {isa = PBXFileReference; name = "AveriaSerifLibre-Italic.ttf"; path = "../assets/fonts/AveriaSerifLibre-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5DDA5971DCC247698FC349E5 /* AveriaSerifLibre-Light.ttf */ = {isa = PBXFileReference; name = "AveriaSerifLibre-Light.ttf"; path = "../assets/fonts/AveriaSerifLibre-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DCF59C725321402FA3172BCC /* AveriaSerifLibre-LightItalic.ttf */ = {isa = PBXFileReference; name = "AveriaSerifLibre-LightItalic.ttf"; path = "../assets/fonts/AveriaSerifLibre-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1A78319ABD6D4E8895CA9AF5 /* AveriaSerifLibre-Regular.ttf */ = {isa = PBXFileReference; name = "AveriaSerifLibre-Regular.ttf"; path = "../assets/fonts/AveriaSerifLibre-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		17AD173EA02D459DBCF82757 /* BreeSerif-Regular.ttf */ = {isa = PBXFileReference; name = "BreeSerif-Regular.ttf"; path = "../assets/fonts/BreeSerif-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C246FD3B4E3247E989FACAB6 /* DancingScript-Bold.ttf */ = {isa = PBXFileReference; name = "DancingScript-Bold.ttf"; path = "../assets/fonts/DancingScript-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7A3B2D865464404A8FD3A579 /* DancingScript-Medium.ttf */ = {isa = PBXFileReference; name = "DancingScript-Medium.ttf"; path = "../assets/fonts/DancingScript-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C7CA331A86854515913B3B29 /* DancingScript-Regular.ttf */ = {isa = PBXFileReference; name = "DancingScript-Regular.ttf"; path = "../assets/fonts/DancingScript-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7F919388BB4841A4B1D32E7C /* DancingScript-SemiBold.ttf */ = {isa = PBXFileReference; name = "DancingScript-SemiBold.ttf"; path = "../assets/fonts/DancingScript-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AF7BDF8D5359445FAFA39EF3 /* DMSerifText-Italic.ttf */ = {isa = PBXFileReference; name = "DMSerifText-Italic.ttf"; path = "../assets/fonts/DMSerifText-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D9BB517EE3564B80A86379E2 /* DMSerifText-Regular.ttf */ = {isa = PBXFileReference; name = "DMSerifText-Regular.ttf"; path = "../assets/fonts/DMSerifText-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +148,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				24F2955F10924BAC978B95D3 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +174,27 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		24F2955F10924BAC978B95D3 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				EAFF0B9F854441A0B6B8FBF7 /* AveriaSerifLibre-Bold.ttf */,
+				B1987E6F3AAA414BB0CD96B9 /* AveriaSerifLibre-BoldItalic.ttf */,
+				09E095EF40EC447F80CF26A0 /* AveriaSerifLibre-Italic.ttf */,
+				5DDA5971DCC247698FC349E5 /* AveriaSerifLibre-Light.ttf */,
+				DCF59C725321402FA3172BCC /* AveriaSerifLibre-LightItalic.ttf */,
+				1A78319ABD6D4E8895CA9AF5 /* AveriaSerifLibre-Regular.ttf */,
+				17AD173EA02D459DBCF82757 /* BreeSerif-Regular.ttf */,
+				C246FD3B4E3247E989FACAB6 /* DancingScript-Bold.ttf */,
+				7A3B2D865464404A8FD3A579 /* DancingScript-Medium.ttf */,
+				C7CA331A86854515913B3B29 /* DancingScript-Regular.ttf */,
+				7F919388BB4841A4B1D32E7C /* DancingScript-SemiBold.ttf */,
+				AF7BDF8D5359445FAFA39EF3 /* DMSerifText-Italic.ttf */,
+				D9BB517EE3564B80A86379E2 /* DMSerifText-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +292,19 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				05B1B52BAB4243A3926B9490 /* AveriaSerifLibre-Bold.ttf in Resources */,
+				AD70ACA713E842C7B9CEA215 /* AveriaSerifLibre-BoldItalic.ttf in Resources */,
+				D333572DA79A444CB42869D1 /* AveriaSerifLibre-Italic.ttf in Resources */,
+				15208A041E524EA297914A72 /* AveriaSerifLibre-Light.ttf in Resources */,
+				06975297150843EDBB2D1B35 /* AveriaSerifLibre-LightItalic.ttf in Resources */,
+				51F47D3D468A4F4D8691B576 /* AveriaSerifLibre-Regular.ttf in Resources */,
+				FA32E3A9B28041C288BFDF53 /* BreeSerif-Regular.ttf in Resources */,
+				94E17D42AC414FB8B46D7757 /* DancingScript-Bold.ttf in Resources */,
+				8E96E25F7AEF46F2967F58C4 /* DancingScript-Medium.ttf in Resources */,
+				8C78892ADDC44A27BDE67630 /* DancingScript-Regular.ttf in Resources */,
+				6528405A95EC4BB496C65CD8 /* DancingScript-SemiBold.ttf in Resources */,
+				E2A32447B6834E10940A23BF /* DMSerifText-Italic.ttf in Resources */,
+				0BEED71B2A294BB3964B572D /* DMSerifText-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
