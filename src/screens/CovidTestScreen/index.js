@@ -1,19 +1,19 @@
 import React from 'react';
-import {View, Text, TextInput, Pressable} from 'react-native';
+import {View, Text, TextInput, Pressable, Modal} from 'react-native';
 import {useState} from 'react';
 import {Menu, MenuItem} from 'react-native-material-menu';
 import ImagePicker from 'react-native-image-crop-picker';
+import {Picker} from '@react-native-picker/picker';
+import ModalPicker from '../../components/modalPicker';
 
 import styles from './style';
 
 const CovidTestScreen = () => {
-  const [text, onChangeText] = useState('');
-  const [number, onChangeNumber] = useState(null);
-
-  // Menu for Gender options
-  const [visible, setVisible] = useState(false);
-  const hideMenu = () => setVisible(false);
-  const showMenu = () => setVisible(true);
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [age, setAge] = useState('');
+  const [gender, setGender] = useState('Select Gender');
 
   const choosePhotoFromLibrary = () => {
     ImagePicker.openPicker({
@@ -32,8 +32,8 @@ const CovidTestScreen = () => {
         style={styles.input}
         placeholder="First Name"
         placeholderTextColor="grey"
-        onChangeText={onChangeText}
-        value={text}
+        onChangeText={setFirstName}
+        value={firstName}
         keyboardType="name-phone-pad"
       />
 
@@ -42,19 +42,9 @@ const CovidTestScreen = () => {
         style={styles.input}
         placeholder="Last Name"
         placeholderTextColor="grey"
-        onChangeText={onChangeText}
-        value={text}
+        onChangeText={setLastName}
+        value={lastName}
         keyboardType="name-phone-pad"
-      />
-
-      {/* Getting Phone Number as an Input */}
-      <TextInput
-        style={styles.input}
-        placeholder="Phone Number"
-        placeholderTextColor="grey"
-        onChangeText={onChangeNumber}
-        value={number}
-        keyboardType="numeric"
       />
 
       {/* Getting Email as an Input */}
@@ -62,49 +52,31 @@ const CovidTestScreen = () => {
         style={styles.input}
         placeholder="Email"
         placeholderTextColor="grey"
-        onChangeText={onChangeNumber}
-        value={text}
+        onChangeText={setEmail}
+        value={email}
         keyboardType="email-address"
       />
 
       {/* Getting Gender as an Input */}
-      <Menu
-        visible={visible}
-        anchor={
-          <Text style={styles.input} onPress={showMenu}>
-            Gender
-          </Text>
-        }
-        onRequestClose={hideMenu}>
-        <MenuItem
-          style={styles.menuItemStyle}
-          pressColor="#EDEBEB"
-          onPress={hideMenu}>
-          Male
-        </MenuItem>
-
-        <MenuItem
-          style={styles.menuItemStyle}
-          pressColor="#EDEBEB"
-          onPress={hideMenu}>
-          Female
-        </MenuItem>
-
-        <MenuItem
-          style={styles.menuItemStyle}
-          pressColor="#EDEBEB"
-          onPress={hideMenu}>
-          Other
-        </MenuItem>
-      </Menu>
+      <View style={styles.pickerContainer}>
+        <Picker
+          selectedValue={gender}
+          // picker must have width
+          style={styles.picker}
+          onValueChange={itemGender => setGender(itemGender)}>
+          <Picker.Item label="Male" value="Male" />
+          <Picker.Item label="Female" value="Female" />
+          <Picker.Item label="Other" value="Other" />
+        </Picker>
+      </View>
 
       {/* Getting Age as an Input */}
       <TextInput
         style={styles.input}
         placeholder="Age"
         placeholderTextColor="grey"
-        onChangeText={onChangeNumber}
-        value={text}
+        onChangeText={setAge}
+        value={age}
         keyboardType="numeric"
       />
 
@@ -119,7 +91,7 @@ const CovidTestScreen = () => {
             },
             styles.wrapperCustom,
           ]}>
-          <Text style={styles.textStyle}>Upload Image</Text>
+          <Text style={styles.textStyle}>Upload X-ray</Text>
         </Pressable>
       </View>
 
@@ -151,3 +123,65 @@ const CovidTestScreen = () => {
 };
 
 export default CovidTestScreen;
+
+//  // Menu for Gender options
+//  const [visible, setVisible] = useState(false);
+//  const hideMenu = () => setVisible(false);
+//  const showMenu = () => setVisible(true);
+{
+  /* Getting Gender as an Input
+      <Menu
+        visible={visible}
+        anchor={
+          <Text style={styles.input} onPress={showMenu}>
+            Gender
+          </Text>
+        }
+        onRequestClose={hideMenu}>
+        <MenuItem
+          style={styles.menuItemStyle}
+          pressColor="#EDEBEB"
+          onPress={hideMenu}>
+          Male
+        </MenuItem>
+
+        <MenuItem
+          style={styles.menuItemStyle}
+          pressColor="#EDEBEB"
+          onPress={hideMenu}>
+          Female
+        </MenuItem>
+
+        <MenuItem
+          style={styles.menuItemStyle}
+          pressColor="#EDEBEB"
+          onPress={hideMenu}>
+          Other
+        </MenuItem>
+      </Menu> */
+}
+
+// const [gender, setGender] = useState('Select Gender');
+// const [isModalVisible, setModalVisible] = useState(false);
+
+// const modalVisibilityHandler = bool => {
+//   setModalVisible(bool);
+// };
+// const setData = option => {
+//   setGender(option);
+// };
+
+// {/* Creating Modal for Gender Options */}
+// <Pressable onPress={() => modalVisibilityHandler(true)}>
+// <Text style={styles.textStyle}>{gender}</Text>
+// </Pressable>
+
+// <Modal
+// transparent={true}
+// visible={isModalVisible}
+// onRequestClose={() => modalVisibilityHandler(false)}>
+// <ModalPicker
+//   modalVisibilityHandler={modalVisibilityHandler}
+//   setData={setData}
+// />
+// </Modal>

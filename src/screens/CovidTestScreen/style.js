@@ -41,6 +41,21 @@ const styles = StyleSheet.create({
     padding: 6,
   },
 
+  picker: {
+    width: Dimensions.get('window').width - 20,
+    height: 40,
+  },
+  pickerContainer: {
+    margin: 12,
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: Dimensions.get('window').width - 20,
+    height: 40,
+    borderColor: 'black',
+    borderWidth: 1,
+    borderRadius: 8,
+  },
+
   textStyle: {
     fontSize: 18,
     color: 'black',
