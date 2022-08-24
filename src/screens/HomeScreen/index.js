@@ -9,38 +9,38 @@ const HomeScreen = ({navigation}) => {
     <View style={styles.container}>
       {/* COVID-19 DETECTION */}
       <Pressable
-        onPress={() => navigation.navigate('Covid-19 Detection')}
+        onPress={() => navigation.navigate('Covid-19')}
         style={({pressed}) => [
           {
-            backgroundColor: pressed ? 'white' : 'aliceblue',
+            backgroundColor: pressed ? '#EDEBEB' : 'white',
           },
           styles.wrapperCustom,
         ]}>
-        <Text style={styles.textStyle}>Covid-19 Detection</Text>
+        <Text style={styles.textStyle}>Covid-19</Text>
       </Pressable>
 
       {/* BRAIN TUMOR DETECTION */}
       <Pressable
-        onPress={() => navigation.navigate('Brain Tumor Detection')}
+        onPress={() => navigation.navigate('Brain Tumor')}
         style={({pressed}) => [
           {
-            backgroundColor: pressed ? 'white' : 'aliceblue',
+            backgroundColor: pressed ? '#EDEBEB' : 'white',
           },
           styles.wrapperCustom,
         ]}>
-        <Text style={styles.textStyle}>Brain Tumor Detection</Text>
+        <Text style={styles.textStyle}>Brain Tumor</Text>
       </Pressable>
 
       {/* BREAST CANCER DETECTION */}
       <Pressable
-        onPress={() => navigation.navigate('Breast Cancer Detection')}
+        onPress={() => navigation.navigate('Breast Cancer')}
         style={({pressed}) => [
           {
-            backgroundColor: pressed ? 'white' : 'aliceblue',
+            backgroundColor: pressed ? '#EDEBEB' : 'white',
           },
           styles.wrapperCustom,
         ]}>
-        <Text style={styles.textStyle}>Breast Cancer Detection</Text>
+        <Text style={styles.textStyle}>Breast Cancer</Text>
       </Pressable>
     </View>
   );

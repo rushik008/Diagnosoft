@@ -1,11 +1,11 @@
 import React from 'react';
 
 import RootStackScreen from './src/routes';
-import BottomTabNavigation from './src/routes/bottomTabNavigation';
+import CovidTestScreen from './src/screens/CovidTestScreen';
 
 const App = () => {
+  // return <CovidTestScreen />;
   return <RootStackScreen />;
-  // return <BottomTabNavigation />;
 };
 
 export default App;

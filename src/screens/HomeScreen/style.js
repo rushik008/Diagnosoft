@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 22,
     color: 'black',
-    fontFamily: 'BreeSerif-Regular',
+    fontFamily: 'AveriaSerifLibre-Regular',
   },
 
   wrapperCustom: {

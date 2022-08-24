@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   headerContainer: {
@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   headerTextStyle: {
     fontSize: 22,
     color: 'black',
-    fontFamily: 'DMSerifText-Italic',
+    fontFamily: 'AveriaSerifLibre-Bold',
   },
 });
 

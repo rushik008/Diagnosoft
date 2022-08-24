@@ -34,26 +34,54 @@ const RootStackScreen = () => {
         />
 
         <RootStack.Screen
-          name="Covid-19 Detection"
+          name="Covid-19"
           component={CovidTestScreen}
           options={{
             headerShown: true,
+            // headerTitleAlign: 'center',
+            headerTitle: () => {
+              return (
+                <View style={styles.headerContainer}>
+                  <Text style={styles.headerTextStyle}>Covid-19 Detection</Text>
+                </View>
+              );
+            },
           }}
         />
 
         <RootStack.Screen
-          name="Brain Tumor Detection"
+          name="Brain Tumor"
           component={BrainTumorTestScreen}
           options={{
             headerShown: true,
+            // headerTitleAlign: 'center',
+            headerTitle: () => {
+              return (
+                <View style={styles.headerContainer}>
+                  <Text style={styles.headerTextStyle}>
+                    Brain Tumor Detection
+                  </Text>
+                </View>
+              );
+            },
           }}
         />
 
         <RootStack.Screen
-          name="Breast Cancer Detection"
+          name="Breast Cancer"
           component={BreastCancerTestScreen}
           options={{
             headerShown: true,
+            // headerTitleAlign: 'center',
+            headerTitle: () => {
+              return (
+                <View style={styles.headerContainer}>
+                  <Text style={styles.headerTextStyle}>
+                    Breast Cancer Detection
+                  </Text>
+                </View>
+              );
+            },
           }}
         />
       </RootStack.Navigator>
