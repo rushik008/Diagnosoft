@@ -31,7 +31,14 @@ const CovidResultScreen = () => {
 
       <View style={styles.imageAndButtonContainer}>
         <Text style={styles.textStyle}>X-ray</Text>
-        <Image style={styles.imageStyle} source={route.params.imageSrc} />
+        <Image
+          style={styles.imageStyle}
+          source={{uri: route.params.imagePath}}
+        />
+        {/* <Image
+          style={styles.imageStyle}
+          source={require('../../../assets/images/tempJPG.jpg')}
+        /> */}
 
         {/* HOME BUTTON */}
         <Pressable

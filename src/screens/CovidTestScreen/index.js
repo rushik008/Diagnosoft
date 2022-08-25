@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, Text, TextInput, Pressable} from 'react-native';
+import {View, Text, TextInput, Pressable, Alert} from 'react-native';
 import ImagePicker from 'react-native-image-crop-picker';
 import {Picker} from '@react-native-picker/picker';
 
@@ -7,12 +7,18 @@ import styles from './style';
 import {useNavigation} from '@react-navigation/native';
 
 const CovidTestScreen = () => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [age, setAge] = useState('');
+  const [firstName, setFirstName] = useState(null);
+  const [lastName, setLastName] = useState(null);
+  const [email, setEmail] = useState(null);
+  const [age, setAge] = useState(null);
   const [gender, setGender] = useState('Male');
-  const [image, setImage] = useState('../../../assets/images/avatarJPEG.jpeg');
+  const [imagePath, setImagePath] = useState(null);
+
+  // const [imagePath, setImagePath] = useState(
+  //   'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png',
+  // );
+
+  // const [imagePath, setImagePath] = useState('../../../assets/images/avatarJPEG.jpeg');
 
   const choosePhotoFromLibrary = () => {
     ImagePicker.openPicker({
@@ -21,21 +27,32 @@ const CovidTestScreen = () => {
       cropping: true,
     }).then(image => {
       console.log(image);
-      setImage(image.path);
+      setImagePath(image.path);
     });
   };
 
   const navigation = useNavigation();
 
   const submit = () => {
-    navigation.navigate('Covid-19 Result', {
-      firstName: firstName,
-      lastName: lastName,
-      email: email,
-      age: age,
-      gender: gender,
-      imageSrc: image,
-    });
+    if (
+      firstName == null ||
+      lastName == null ||
+      email == null ||
+      age == null ||
+      gender == null ||
+      imagePath == null
+    ) {
+      Alert.alert('Invalid!', 'Enter require data.', [{text: 'OK'}]);
+    } else {
+      navigation.navigate('Covid-19 Result', {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        age: age,
+        gender: gender,
+        imagePath: imagePath,
+      });
+    }
   };
 
   return (

@@ -3,8 +3,8 @@ import {Dimensions, StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 12,
-    paddingVertical: 5,
+    // padding: 10,
+    paddingHorizontal: 10,
     flexDirection: 'column',
     // width: Dimensions.get('window').width - 20,
     backgroundColor: 'white',
