@@ -10,6 +10,7 @@ import BrainTumorTestScreen from '../screens/BrainTumorTestScreen';
 import BreastCancerTestScreen from '../screens/BreastCancerTestScreen';
 
 import styles from './style';
+import CovidResultScreen from '../screens/CovidResultScreen';
 
 const RootStackScreen = () => {
   const RootStack = createStackNavigator();
@@ -43,6 +44,22 @@ const RootStackScreen = () => {
               return (
                 <View style={styles.headerContainer}>
                   <Text style={styles.headerTextStyle}>Covid-19 Detection</Text>
+                </View>
+              );
+            },
+          }}
+        />
+
+        <RootStack.Screen
+          name="Covid-19 Result"
+          component={CovidResultScreen}
+          options={{
+            headerShown: true,
+            // headerTitleAlign: 'center',
+            headerTitle: () => {
+              return (
+                <View style={styles.headerContainer}>
+                  <Text style={styles.headerTextStyle}>Covid-19 Result</Text>
                 </View>
               );
             },

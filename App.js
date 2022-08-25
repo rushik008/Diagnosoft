@@ -1,10 +1,9 @@
 import React from 'react';
-
 import RootStackScreen from './src/routes';
-import CovidTestScreen from './src/screens/CovidTestScreen';
+import CovidResultScreen from './src/screens/CovidResultScreen';
 
 const App = () => {
-  // return <CovidTestScreen />;
+  // return <CovidResultScreen />;
   return <RootStackScreen />;
 };
 
