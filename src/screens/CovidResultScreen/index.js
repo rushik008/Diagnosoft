@@ -35,10 +35,6 @@ const CovidResultScreen = () => {
           style={styles.imageStyle}
           source={{uri: route.params.imagePath}}
         />
-        {/* <Image
-          style={styles.imageStyle}
-          source={require('../../../assets/images/tempJPG.jpg')}
-        /> */}
 
         {/* HOME BUTTON */}
         <Pressable
@@ -100,12 +96,3 @@ export default CovidResultScreen;
 // </View>
 
 // BASIC CODE TO LEARN HOW ROUTES WORK
-
-{
-  /* <Text>
-        Name: {route.params.firstName} {route.params.lastName}
-      </Text>
-      <Text>Email: {route.params.email}</Text>
-      <Text>Age: {route.params.age}</Text>
-      <Text>Gender: {route.params.gender}</Text> */
-}
