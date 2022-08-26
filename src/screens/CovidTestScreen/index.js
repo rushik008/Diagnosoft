@@ -2,9 +2,8 @@ import React, {useState} from 'react';
 import {View, Text, TextInput, Pressable, Alert} from 'react-native';
 import ImagePicker from 'react-native-image-crop-picker';
 import {Picker} from '@react-native-picker/picker';
-
-import styles from './style';
 import {useNavigation} from '@react-navigation/native';
+import styles from './style';
 
 const CovidTestScreen = () => {
   const [firstName, setFirstName] = useState(null);
@@ -14,11 +13,7 @@ const CovidTestScreen = () => {
   const [gender, setGender] = useState('Male');
   const [imagePath, setImagePath] = useState(null);
 
-  // const [imagePath, setImagePath] = useState(
-  //   'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png',
-  // );
-
-  // const [imagePath, setImagePath] = useState('../../../assets/images/avatarJPEG.jpeg');
+  const [modelResult, setModelResult] = useState('Default');
 
   const choosePhotoFromLibrary = () => {
     ImagePicker.openPicker({
@@ -51,6 +46,7 @@ const CovidTestScreen = () => {
         age: age,
         gender: gender,
         imagePath: imagePath,
+        modelResult: modelResult,
       });
     }
   };
@@ -107,7 +103,7 @@ const CovidTestScreen = () => {
         placeholderTextColor="grey"
         onChangeText={setEmail}
         value={email}
-        keyboardType="email-address"
+        keyboardType="name-phone-pad"
       />
 
       {/* This line of code will put the upload button in the starting of the screen width */}
@@ -129,6 +125,7 @@ const CovidTestScreen = () => {
       <View style={styles.buttonContainer}>
         {/* CANCEL BUTTON */}
         <Pressable
+          onPress={() => navigation.navigate('Root Stack')}
           style={({pressed}) => [
             {
               backgroundColor: pressed ? 'white' : 'lightsalmon',

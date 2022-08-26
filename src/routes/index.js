@@ -2,15 +2,15 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
-
 import BottomTabNavigation from './bottomTabNavigation';
 
 import CovidTestScreen from '../screens/CovidTestScreen';
-import BrainTumorTestScreen from '../screens/BrainTumorTestScreen';
-import BreastCancerTestScreen from '../screens/BreastCancerTestScreen';
-
-import styles from './style';
 import CovidResultScreen from '../screens/CovidResultScreen';
+import BrainTumorTestScreen from '../screens/BrainTumorTestScreen';
+import BrainTumorResultScreen from '../screens/BrainTumorResultScreen';
+import BreastCancerTestScreen from '../screens/BreastCancerTestScreen';
+import BreastCancerResultScreen from '../screens/BreastCancerResultScreen';
+import styles from './style';
 
 const RootStackScreen = () => {
   const RootStack = createStackNavigator();
@@ -85,6 +85,22 @@ const RootStackScreen = () => {
         />
 
         <RootStack.Screen
+          name="Brain Tumor Result"
+          component={BrainTumorResultScreen}
+          options={{
+            headerShown: true,
+            // headerTitleAlign: 'center',
+            headerTitle: () => {
+              return (
+                <View style={styles.headerContainer}>
+                  <Text style={styles.headerTextStyle}>Brain Tumor Result</Text>
+                </View>
+              );
+            },
+          }}
+        />
+
+        <RootStack.Screen
           name="Breast Cancer"
           component={BreastCancerTestScreen}
           options={{
@@ -93,8 +109,23 @@ const RootStackScreen = () => {
             headerTitle: () => {
               return (
                 <View style={styles.headerContainer}>
+                  <Text style={styles.headerTextStyle}>Breast Cancer</Text>
+                </View>
+              );
+            },
+          }}
+        />
+        <RootStack.Screen
+          name="Breast Cancer Result"
+          component={BreastCancerResultScreen}
+          options={{
+            headerShown: true,
+            // headerTitleAlign: 'center',
+            headerTitle: () => {
+              return (
+                <View style={styles.headerContainer}>
                   <Text style={styles.headerTextStyle}>
-                    Breast Cancer Detection
+                    Breast Cancer Result
                   </Text>
                 </View>
               );
