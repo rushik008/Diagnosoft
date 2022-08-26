@@ -52,8 +52,8 @@ const BreastCancerTestScreen = () => {
   };
 
   return (
-    <View style={styles.container}>
-      <ScrollView>
+    <ScrollView style={styles.scrollview}>
+      <View style={styles.container}>
         {/* FIRST NAME INPUT */}
         <TextInput
           style={styles.input}
@@ -167,8 +167,8 @@ const BreastCancerTestScreen = () => {
             <Text style={styles.textStyle}>Detect</Text>
           </Pressable>
         </View>
-      </ScrollView>
-    </View>
+      </View>
+    </ScrollView>
   );
 };
 

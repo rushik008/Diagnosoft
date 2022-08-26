@@ -1,6 +1,10 @@
 import {Dimensions, StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
+  scrollview: {
+    flex: 1,
+    backgroundColor: 'white',
+  },
   container: {
     flex: 1,
     flexDirection: 'column',

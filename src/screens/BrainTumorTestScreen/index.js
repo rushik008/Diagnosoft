@@ -4,6 +4,7 @@ import ImagePicker from 'react-native-image-crop-picker';
 import {Picker} from '@react-native-picker/picker';
 import {useNavigation} from '@react-navigation/native';
 import styles from './style';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const BrainTumorTestScreen = () => {
   const [firstName, setFirstName] = useState(null);
@@ -52,6 +53,7 @@ const BrainTumorTestScreen = () => {
   };
 
   return (
+    <ScrollView style = {styles.scrollview}>
     <View style={styles.container}>
       {/* FIRST NAME INPUT */}
       <TextInput
@@ -148,6 +150,7 @@ const BrainTumorTestScreen = () => {
         </Pressable>
       </View>
     </View>
+    </ScrollView>
   );
 };
 
