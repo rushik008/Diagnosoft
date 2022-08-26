@@ -8,8 +8,8 @@ const BreastCancerResultScreen = ({navigation}) => {
   const route = useRoute();
 
   return (
-    <ScrollView>
-      <View style={styles.container}>
+    <View style={styles.container}>
+      <ScrollView>
         <View style={styles.dataContainer}>
           <View style={styles.leftContainer}>
             <Text style={styles.textStyle}>Name: </Text>
@@ -30,6 +30,10 @@ const BreastCancerResultScreen = ({navigation}) => {
             <Text style={styles.textStyle}>{route.params.age}</Text>
             <Text style={styles.textStyle}>{route.params.gender}</Text>
             <Text style={styles.textStyle}>{route.params.concaveMean}</Text>
+            <Text style={styles.textStyle}>{route.params.areaMean}</Text>
+            <Text style={styles.textStyle}>{route.params.radiusMean}</Text>
+            <Text style={styles.textStyle}>{route.params.perimeterMean}</Text>
+            <Text style={styles.textStyle}>{route.params.concaveMean}</Text>
             <Text style={styles.textStyle}>{route.params.modelResult}</Text>
           </View>
         </View>
@@ -47,8 +51,8 @@ const BreastCancerResultScreen = ({navigation}) => {
             <Text style={styles.textStyle}>Home</Text>
           </Pressable>
         </View>
-      </View>
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 };
 
