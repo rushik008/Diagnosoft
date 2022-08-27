@@ -11,7 +11,7 @@ const BreastCancerResultScreen = ({navigation}) => {
     <ScrollView style={styles.scrollview}>
       <View style={styles.container}>
         <View style={styles.dataContainer}>
-          <View style={styles.leftContainer}>
+          <View>
             <Text style={styles.textStyle}>Name: </Text>
             <Text style={styles.textStyle}>Age: </Text>
             <Text style={styles.textStyle}>Gender: </Text>
@@ -23,7 +23,7 @@ const BreastCancerResultScreen = ({navigation}) => {
             <Text style={styles.textStyle}>Result: </Text>
           </View>
 
-          <View style={styles.rightContainer}>
+          <View>
             <Text style={styles.textStyle}>
               {route.params.firstName} {route.params.lastName}
             </Text>
@@ -40,7 +40,7 @@ const BreastCancerResultScreen = ({navigation}) => {
           </View>
         </View>
 
-        <View style={styles.imageAndButtonContainer}>
+        <View style={styles.imageContainer}>
           {/* HOME BUTTON */}
           <Pressable
             onPress={() => navigation.navigate('Root Stack')} // go back to home page AFTER CLEARING ALL THE DATA

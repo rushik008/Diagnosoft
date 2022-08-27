@@ -9,22 +9,19 @@ const BrainTumorResultScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.dataContainer}>
-        <View style={styles.leftContainer}>
+        <View>
           <Text style={styles.textStyle}>Name: </Text>
           <Text style={styles.textStyle}>Age: </Text>
           <Text style={styles.textStyle}>Gender: </Text>
-          <Text style={styles.textStyle}>Email: </Text>
           <Text style={styles.textStyle}>Result: </Text>
         </View>
 
-        <View style={styles.rightContainer}>
+        <View>
           <Text style={styles.textStyle}>
             {route.params.firstName} {route.params.lastName}
           </Text>
           <Text style={styles.textStyle}>{route.params.age}</Text>
           <Text style={styles.textStyle}>{route.params.gender}</Text>
-          <Text style={styles.textStyle}>{route.params.email}</Text>
-          {/* RESULT SHOULD BE CHANGED AFTER PROCESSING THE ML MODEL */}
           <Text style={styles.textStyle}>{route.params.modelResult}</Text>
         </View>
       </View>

@@ -1,30 +1,22 @@
-import {Dimensions, StyleSheet} from 'react-native';
+import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
-  container: {
+  scrollview: {
     flex: 1,
-    // padding: 10,
-    paddingHorizontal: 10,
-    flexDirection: 'column',
-    // width: Dimensions.get('window').width - 20,
     backgroundColor: 'white',
-    // borderWidth: 1,
   },
 
-  // data container containes two views :
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    margin: 8,
+  },
+
+  // data container containes two views having column flex direction
   dataContainer: {
     flexDirection: 'row',
   },
-  leftContainer: {
-    flexDirection: 'column',
-    // borderWidth: 1,
-    // borderColor: 'red',
-  },
-  rightContainer: {
-    flexDirection: 'column',
-    // borderWidth: 1,
-    // borderColor: 'green',
-  },
+
   textStyle: {
     margin: 6,
     fontSize: 18,
@@ -36,7 +28,6 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    margin: 8,
   },
 
   imageStyle: {
@@ -46,9 +37,9 @@ const styles = StyleSheet.create({
   },
 
   buttonStyle: {
+    margin: 12,
     alignItems: 'center',
     justifyContent: 'center',
-    margin: 25,
     width: 200,
     height: 40,
     borderWidth: 1,

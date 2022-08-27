@@ -3,18 +3,17 @@ import {View, Text, TextInput, Pressable, Alert} from 'react-native';
 import ImagePicker from 'react-native-image-crop-picker';
 import {Picker} from '@react-native-picker/picker';
 import {useNavigation} from '@react-navigation/native';
-import styles from './style';
 import {ScrollView} from 'react-native-gesture-handler';
+import styles from './style';
 
 const CovidTestScreen = () => {
   const [firstName, setFirstName] = useState(null);
   const [lastName, setLastName] = useState(null);
-  const [email, setEmail] = useState(null);
   const [age, setAge] = useState(null);
   const [gender, setGender] = useState('Male');
   const [imagePath, setImagePath] = useState(null);
 
-  const [modelResult, setModelResult] = useState('Default');
+  const [modelResult, setModelResult] = useState('Negative');
 
   const choosePhotoFromLibrary = () => {
     ImagePicker.openPicker({
@@ -33,7 +32,6 @@ const CovidTestScreen = () => {
     if (
       firstName == null ||
       lastName == null ||
-      email == null ||
       age == null ||
       gender == null ||
       imagePath == null
@@ -43,7 +41,6 @@ const CovidTestScreen = () => {
       navigation.navigate('Covid-19 Result', {
         firstName: firstName,
         lastName: lastName,
-        email: email,
         age: age,
         gender: gender,
         imagePath: imagePath,
@@ -97,16 +94,6 @@ const CovidTestScreen = () => {
             <Picker.Item label="Other" value="Other" />
           </Picker>
         </View>
-
-        {/* EMAIL INPUT */}
-        <TextInput
-          style={styles.input}
-          placeholder="Email"
-          placeholderTextColor="grey"
-          onChangeText={setEmail}
-          value={email}
-          keyboardType="name-phone-pad"
-        />
 
         {/* This line of code will put the upload button in the starting of the screen width */}
         {/* <View style={styles.uploadImageButtonContainer}> */}
